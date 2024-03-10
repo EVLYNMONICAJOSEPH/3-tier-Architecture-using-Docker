@@ -8,4 +8,6 @@ WORKDIR /code
 ADD requirements.txt /code/
 RUN pip3 install -r requirements.txt
 ADD . /code/
-CMD ["python3", "backend.py" ]
+ENV FLASK_APP=backend.py
+CMD ["python3", "-m" , "flask", "run", "backend.py" ]
+
