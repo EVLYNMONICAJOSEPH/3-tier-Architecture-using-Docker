@@ -5,4 +5,5 @@ ADD requirements.txt /code/
 RUN pip3 install -r requirements.txt
 ADD . /code/
 EXPOSE 5001
-CMD ["python3", "front.py" ]
+ENV FLASK_APP=front.py
+CMD ["python3", "-m" , "flask", "run", "front.py" ]
