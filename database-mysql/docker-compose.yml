@@ -5,7 +5,7 @@ services:
   mysql-development:
     image: mysql:8.0.17
     environment:
-      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_ROOT_PASSWORD:""
       MYSQL_DATABASE: mydb
     ports:
       - "5001:5001"
