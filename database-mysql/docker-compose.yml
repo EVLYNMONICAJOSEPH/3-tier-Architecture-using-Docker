@@ -8,4 +8,4 @@ services:
       MYSQL_ROOT_PASSWORD:""
       MYSQL_DATABASE: mydb
     ports:
-      - "5001:5001"
+      - "3306:3306"
